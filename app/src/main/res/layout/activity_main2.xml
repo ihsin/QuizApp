@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/android_w_java">
+
+    <TextView
+        android:id="@+id/questionAttempted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:id="@+id/quizover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="Quiz Over"
+        android:layout_weight="2"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/questionAttempted"
+      />
+
+    <TextView
+        android:id="@+id/questionskipped"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_weight="2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/questionAttempted"/>
+    <TextView
+        android:id="@+id/scored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_weight="2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/questionskipped"/>
+
+
+</RelativeLayout>

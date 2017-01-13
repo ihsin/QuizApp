@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/android_w_java">
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_weight="2"/>
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/radio_group"
+    android:layout_width="fill_parent"
+    android:layout_height="0dp"
+    android:orientation="vertical"
+        android:background="@android:color/transparent"
+    android:layout_weight="6">
+        <RadioButton android:id="@+id/radio_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:button="@null"
+            android:textStyle="bold"
+            android:drawableLeft="@android:drawable/btn_radio"
+            android:background="@drawable/buttonbackground"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radio_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:button="@null"
+            android:textStyle="bold"
+            android:drawableLeft="@android:drawable/btn_radio"
+            android:background="@drawable/buttonbackground"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radio_button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:button="@null"
+            android:drawableLeft="@android:drawable/btn_radio"
+            android:background="@drawable/buttonbackground"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radio_button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:button="@null"
+            android:drawableLeft="@android:drawable/btn_radio"
+            android:background="@drawable/buttonbackground"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:layout_gravity="center_horizontal"/>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:max="10"
+        android:progress="0"
+        android:layout_marginBottom="40dp"
+        />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SUBMIT"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:clickable="false"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="SKIP"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</LinearLayout>
